@@ -6,10 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Welcome to the Haldia Development Authority</title>
+
    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" >
-   
-   <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-   <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+   <script type="text/javascript" src="{% static 'jquery-1.11.2.min.js' %} "></script>
+   <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %} "></script>
 
    <style type="text/css">
         .navbar { 
@@ -19,54 +21,71 @@
          -o-background-size: cover;
          background-size: cover;
         }
+
 </style>
 </head>
 
 <body id="reportsPage">
-	 <div class="" id="home">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container h-100">
-            	<a class="navbar-brand" href="base.html">
-                    <img src="{% static 'biswo.png' %}" alt="" />
-                </a>
-            	<a class="navbar-brand" href="base.html">
+  <div style=" background: url('{% static 'back3.jpg' %}') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;border-style: solid; border-width: 3px medium;border-color: #2196F3;">
+	 <div class="container" id="home">
+      <div class="row">
+          <div class="col-md-1">
+            	<a href="base.html">
+                    <img src="{% static 'biswo.png' %}" alt= "" width="99px" height="132px"/>
+              </a>
+          </div>
+          <div class="col-md-5">
+              <br/>
+              <br/>
+             	<a href="base.html">
                     <img src="{% static 'logo.png' %}" alt="" />
-                </a>
-                <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars tm-nav-icon"></i>
-                </button>
-
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto h-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-home"></i>
-                                Home
-                               
-                            </a>
-                        </li>
-                         
-                         <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <i class="far fa-address-card"></i>
-                                About Us
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <i class="fa fa-phone"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                       
-                       
-                    </ul>
-                  </div>
-            </div>	
-        </nav>
-     </div>
+              </a>
+    
+          </div>
+          <div class="col-md-1">
+            <br/>
+            <br/>
+             <ul class="navbar-nav mx-auto h-100">
+                <li class="center">
+                  <a style="color:white;" href="#">
+                   <i class="fas fa-home center"></i>
+                     Home
+                  </a>
+                </li>
+              </ul>
+            </div>
+          <div class="col-md-1">
+            <br/>
+            <br/>
+             <ul class="navbar-nav mx-auto h-100">
+                <li class="center">
+                   <a style="color:white;" href="">
+                      <i class="far fa-address-card center"></i>
+                      <nobr>
+                        About Us
+                      </nobr>
+                   </a>
+                 </li>
+              </ul>
+          </div>
+          <div class="col-md-1">
+            <br/>
+            <br/>
+             <ul class="navbar-nav mx-auto h-100">
+                <li class="center">
+                  <a style="color:white;" href="">
+                    <i class="fa fa-phone center"></i>
+                    <nobr>
+                      Contact Us
+                    </nobr>
+                  </a>
+                </li>
+              </ul>
+          </div>
+      </div>
+   </div>	
+   </div>     
+     
     
 
      <section id="main">
@@ -76,9 +95,42 @@
    </section>
 </body>
 
- <footer id="footer">Copyright &copy;
-       <script type="text/JavaScript">
-       document.write(new Date().getFullYear());
-       </script> HDA
+ <footer style="border-style: solid; border-width: 3px medium;border-color: #2196F3;background-color: #2C3E50;" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">Contact Details</h3>
+                    <hr class="ass-light-border">
+                    <div class="widget-body">
+                        <p><i class="fa fa-phone fa-5"></i> 1800-345-3224 (Toll free)<br>
+                            <i class="fa fa-envelope fa-5"></i> <a href="mailto:ceo.hda@gmail.com">ceo.hda@gmail.com</a><br>
+                          Haldia Unnayan Bhawan, City Centre, P.O. Debhog, Haldia, Dist: Purba Medinipur,<br>
+                                PIN -721657
+                            <br/>
+                            Copyright &copy; 2020, Government of West Bengal
+                        </p>  
+                    </div>
+                </div>
+                
+                <div class="col-md-6 widget">
+                    <h3 class="widget-title">Haldia Development Authority.</h3>
+                    <hr class="ass-light-border">
+                    <div class="widget-body">
+                        <p>
+                            Haldia Development Authority (HDA) is a statutory authority constituted under The West Bengal Town and Country (Planning and Development) Act, 1979. The Authority is guided by the Board of Haldia Development Authority. Present Constituent of The Board has been formed by the Govt. of West Bengal, vide Notification No. 1655-T&CP/C-2/2C-2/2001 dated Kolkata, the 17th August, 2011.
+                        </p>
+                    </div>
+                </div>
+    
+            </div> <!-- /row of widgets -->
+        </div>
+        <div style="background-color: #ffffff;" class="col-md-12 text-center">
+                    <div>
+                        <p class="text-center">
+                             Designed & Developed by&nbsp; <a href="http://www.hda.gov.in/" target="_blank"><img src="{% static 'hda.jpg' %}" width="48px" height="36px"></a> 
+                        </p>
+                    </div>
+                </div>
+       
  </footer>
 </html>
